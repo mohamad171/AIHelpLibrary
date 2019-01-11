@@ -2,17 +2,16 @@ package ir.aihelp.library;
 
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
+
+import ir.aihelp.helplibrary.AIConnect;
 
 
 public class MainActivity extends AppCompatActivity {
 
-    FragmentManager fragmentManager;
-    FragmentTransaction fragmentTransaction;
-    ServerInterface serverInterface;
-
+    Button go_chat;
 
     @Override
     public void onBackPressed() {
@@ -23,11 +22,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        fragmentManager = getSupportFragmentManager();
-        fragmentTransaction = fragmentManager.beginTransaction();
+        go_chat = findViewById(R.id.go_chat);
+        final AIConnect aiConnect = new AIConnect(MainActivity.this);
+        aiConnect.AIinit("1234","Test");
+        go_chat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        fragmentTransaction.replace(R.id.chat_frame,new MainFragment());
-        fragmentTransaction.commit();
+                aiConnect.AIopenChat();
+            }
+        });
+
     }
 
 }
