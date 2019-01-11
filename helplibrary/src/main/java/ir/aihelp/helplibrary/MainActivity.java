@@ -22,11 +22,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.aihelp_activity_main);
+        setTheme(R.style.AppTheme_NoActionAIHelp);
+
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
 
         fragmentTransaction.replace(R.id.chat_frame,new MainFragment());
         fragmentTransaction.commit();
+
     }
 
 }

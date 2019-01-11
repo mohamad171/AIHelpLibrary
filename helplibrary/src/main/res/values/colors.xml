@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#135269</color>
-    <color name="colorPrimaryDark">#104558</color>
-    <color name="colorAccent">#2aa1a0</color>
+    <color name="aicolorPrimary">#135269</color>
+    <color name="aicolorPrimaryDark">#104558</color>
+    <color name="aicolorAccent">#2aa1a0</color>
     <color name="aiwhite">#ffff</color>
     <color name="aigray">#c6c0c0</color>
 </resources>

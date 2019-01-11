@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/aicolorPrimaryDark"
     android:layoutDirection="ltr">
     <RelativeLayout
-        android:background="@color/colorPrimary"
+        android:background="@color/aicolorPrimary"
         android:orientation="horizontal"
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -43,7 +43,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:background="@color/colorPrimary"
+        android:background="@color/aicolorPrimary"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
         android:gravity="center"
