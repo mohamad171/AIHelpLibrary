@@ -1,4 +1,4 @@
 # AIHelpLibrary
 AIHelp Library
 
-Business support android libtrary
+Business support android library
